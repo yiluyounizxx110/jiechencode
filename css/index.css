@@ -81,17 +81,17 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 .float_right{
 	float:right;
 }
-.w_1180{
-	width:1180px;
+.w_1280{
+	width:1280px;
 }
 .w_930{
 	width:930px;
 }
-.w_243{
-	width:243px;
+.w_343{
+	width:343px;
 }
-.w_223{
-	width:223px;
+.w_323{
+	width:323px;
 }
 .h_20{
 	height:20px;
@@ -126,8 +126,53 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 	display: block;
 	font-weight: bold;
 }
-.main_nav li{display: inline-block;padding-right:60px;}
+.main_nav li{display: inline-block;padding-right:60px;position: relative;}
 .main_nav li a{display: inline-block;padding:20px 0;font-size:16px;color:#231815;}
+.category_list{
+	display: none;
+	position: absolute;
+	top:64px;
+	left:-20px;
+	z-index: 2;
+	width:150px;
+	font-size: 16px;
+	/*text-indent: 10px;*/
+	background-color: #ffffff;
+	/*border:1px solid red;*/
+}
+.main_nav li .category_list a{
+	display: inline-block;
+	padding: 0px;
+}
+.category_list .category_item{
+	display: block;
+	height:30px;
+	line-height:30px;
+	text-indent: 10px;
+}
+.category_list .category_item:hover{
+	background-color: #FCFACB;
+}
+.main_nav .category_li:hover .category_list{
+	display: block;
+} 
+.category_product,.category_product_list{
+	display: none;
+	position: absolute;
+}
+.category_product_list{
+    width: 400px;
+    height: 390px;
+    /*border: 1px solid red;*/
+    left: 129px;
+    background: #ffffff;
+    z-index: 2;
+	/*display: block;*/
+}
+
+
+
+
 /*top*/
 
 
@@ -216,17 +261,13 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 }
 /****hot_product***/
 .hot_product_list{
-	/*display: block;*/
 }
 .hot_product_item{
-	/*float:left;*/
 	margin-right:0px;
 	margin-bottom: 4px;
 }
 .about_company{
 	display: inline-block;
-	/*border:1px solid red;*/
-	/*outline: ;*/
 }
 .about_company .about_title{
 	height:40px;
@@ -248,7 +289,26 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 	text-indent: 28px;;
 	padding: 9px;
 	border:1px solid #EFECEC;
-	width:
+}
+.about_company .about_content ul li{
+	list-style: disc;
+	text-indent: 0px;
+	border-bottom:1px dotted #B2B2B2;
+	margin-left:10px;
+	line-height:30px;
+	height:30px;
+}
+.about_company .about_content ul li span{
+	display: inline-block;
+}
+.news_title{
+	width:232px;
+}
+.news_title a:hover{
+	color:#FFF100;
+}
+.news_time{
+	float:right
 }
 .footer{
 	width:100%;
@@ -284,8 +344,6 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 	text-decoration: underline;
 }
 .record{
-	/*border:1px solid red;*/
-	/*display: inline-block;*/
 	width:215px;
 	margin: 0 auto;
 }
@@ -302,4 +360,3 @@ a:hover{ /*text-decoration:underline; *//*color:#fff;*/}
 	font-size: 14px;
 	vertical-align: top;
 }
-
