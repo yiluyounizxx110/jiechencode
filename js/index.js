@@ -11,7 +11,7 @@ function pageInit(){
 	$(".new_product_list").mouseout(function(){
 		cycle_slider.init();
 	});
-	$(".category_item").mouseover(function(){
+	/*$(".category_item").mouseover(function(){
 		var id = $(this).attr("id");
 		$(".category_product_list").show();
 		$("." + id).show().siblings().hide();
@@ -19,7 +19,7 @@ function pageInit(){
 	$(".category_product_list").mouseout(function(){
 		$(".category_product").hide();
 		$(".category_product_list").hide();
-	});
+	});*/
 }
 var cycle_slider = {
 	cur_index:0,
